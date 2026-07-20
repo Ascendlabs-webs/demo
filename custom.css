@@ -39,6 +39,32 @@
 html { scroll-behavior: smooth; }
 body { overflow-x: hidden; }
 
+/* Floating stars */
+.stars-container {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0;
+  animation: floatStar linear infinite;
+}
+.star.sm { width: 1px; height: 1px; }
+.star.lg { width: 3px; height: 3px; }
+@keyframes floatStar {
+  0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.6; }
+  90% { opacity: 0.6; }
+  100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
+}
+
 .nav-link {
   position: relative;
 }

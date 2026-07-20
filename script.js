@@ -1,4 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Floating stars
+  const container = document.createElement('div');
+  container.className = 'stars-container';
+  document.body.appendChild(container);
+    for (let i = 0; i < 80; i++) {
+    const star = document.createElement('div');
+    star.className = 'star' + (i % 3 === 0 ? ' sm' : '') + (i % 7 === 0 ? ' lg' : '');
+    star.style.left = Math.random() * 100 + '%';
+    star.style.animationDuration = (10 + Math.random() * 20) + 's';
+    star.style.animationDelay = (Math.random() * 20) + 's';
+    container.appendChild(star);
+  }
   // Set active nav link
   const currentPath = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-link').forEach(link => {
