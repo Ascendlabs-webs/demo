@@ -216,13 +216,7 @@ body { overflow-x: hidden; }
 .portfolio-card:hover .portfolio-glow {
   opacity: 0.12;
 }
-.card-large {
-  grid-column: span 2;
-}
 @media (max-width: 768px) {
-  .card-large {
-    grid-column: span 1;
-  }
   .portfolio-overlay {
     opacity: 1;
     transform: translateY(0);
