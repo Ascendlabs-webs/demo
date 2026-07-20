@@ -19,6 +19,22 @@ document.addEventListener('DOMContentLoaded', () => {
   }, observerOptions);
   document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
 
+  // Mobile menu toggle
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open');
+    });
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileMenu.classList.remove('open');
+      });
+    });
+  }
+
   // Contact form - WhatsApp redirect
   const form = document.getElementById('contactForm');
   if (form) {

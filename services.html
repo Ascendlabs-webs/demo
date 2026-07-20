@@ -137,7 +137,7 @@
 <header class="fixed top-0 w-full z-50 bg-background/60 backdrop-blur-2xl border-b border-white/10 h-20">
 <div class="flex justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto h-full">
 <a href="index.html" class="font-display-lg text-headline-md tracking-tighter text-on-surface">Ascend Labs</a>
-<nav class="hidden md:flex gap-10">
+<nav class="nav-desktop flex gap-10">
 <a class="nav-link font-label-caps text-body-md text-on-surface-variant hover:text-white transition-colors tracking-widest uppercase text-[11px]" href="index.html">Home</a>
 <a class="nav-link font-label-caps text-body-md text-white font-bold tracking-widest uppercase text-[11px] is-active" href="services.html">Services</a>
 <a class="nav-link font-label-caps text-body-md text-on-surface-variant hover:text-white transition-colors tracking-widest uppercase text-[11px]" href="work.html">Work</a>
@@ -145,11 +145,21 @@
 <a class="nav-link font-label-caps text-body-md text-on-surface-variant hover:text-white transition-colors tracking-widest uppercase text-[11px]" href="pricing.html">Pricing</a>
 <a class="nav-link font-label-caps text-body-md text-on-surface-variant hover:text-white transition-colors tracking-widest uppercase text-[11px]" href="contact.html">Contact</a>
 </nav>
-<a href="contact.html" class="bg-white text-black px-8 py-2.5 rounded-full font-label-caps uppercase text-[11px] tracking-[0.15em] hover:bg-neutral-200 active:scale-95 transition-all">
-                Let's Build
-            </a>
+<a href="contact.html" class="hidden md:inline-block bg-white text-black px-8 py-2.5 rounded-full font-label-caps uppercase text-[11px] tracking-[0.15em] hover:bg-neutral-200 active:scale-95 transition-all">Book a Free Call</a>
+<button class="hamburger" id="hamburger" aria-label="Menu">
+<span></span><span></span><span></span>
+</button>
 </div>
 </header>
+<div class="mobile-menu" id="mobileMenu">
+<a href="index.html">Home</a>
+<a href="services.html" class="is-active">Services</a>
+<a href="work.html">Work</a>
+<a href="about.html">About</a>
+<a href="pricing.html">Pricing</a>
+<a href="contact.html">Contact</a>
+<a href="contact.html" class="mobile-cta">Book a Free Call</a>
+</div>
 <main class="relative">
 <!-- Hero Section -->
 <section class="pt-48 pb-32 px-margin-mobile md:px-gutter max-w-container-max mx-auto">

@@ -40,7 +40,7 @@
   <header class="fixed top-0 w-full z-50 bg-background/60 backdrop-blur-2xl border-b border-white/10 h-20">
     <div class="flex justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto h-full">
       <a href="index.html" class="font-display-lg text-headline-md tracking-tighter text-on-surface">Ascend Labs</a>
-      <nav class="hidden md:flex gap-10">
+      <nav class="nav-desktop flex gap-10">
         <a href="index.html" class="nav-link font-label-caps text-sm text-on-surface-variant hover:text-white transition-colors tracking-widest uppercase">Home</a>
         <a href="services.html" class="nav-link font-label-caps text-sm text-on-surface-variant hover:text-white transition-colors tracking-widest uppercase">Services</a>
         <a href="work.html" class="nav-link font-label-caps text-sm text-on-surface-variant hover:text-white transition-colors tracking-widest uppercase">Work</a>
@@ -48,9 +48,21 @@
         <a href="pricing.html" class="nav-link font-label-caps text-sm text-white font-bold tracking-widest uppercase is-active">Pricing</a>
         <a href="contact.html" class="nav-link font-label-caps text-sm text-on-surface-variant hover:text-white transition-colors tracking-widest uppercase">Contact</a>
       </nav>
-      <a href="contact.html" class="bg-white text-black px-8 py-2.5 rounded-full font-label-caps uppercase text-[11px] tracking-[0.15em] hover:bg-neutral-200 active:scale-95 transition-all">Let's Build</a>
+      <a href="contact.html" class="hidden md:inline-block bg-white text-black px-8 py-2.5 rounded-full font-label-caps uppercase text-[11px] tracking-[0.15em] hover:bg-neutral-200 active:scale-95 transition-all">Book a Free Call</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="work.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="pricing.html" class="is-active">Pricing</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="mobile-cta">Book a Free Call</a>
+  </div>
 
   <main class="relative">
     <section class="pt-48 pb-32 px-margin-mobile md:px-gutter max-w-container-max mx-auto text-center">
@@ -64,7 +76,7 @@
         <div class="bg-surface-container rounded-3xl border border-white/10 p-10 hover:border-white/30 transition-all hover:scale-[1.02]">
           <h3 class="font-display-lg text-2xl text-on-surface mb-2">Starter</h3>
           <p class="font-body-md text-on-surface-variant text-sm mb-8">A refined digital presence for businesses entering the online space.</p>
-          <div class="text-5xl font-bold text-white mb-8">₹18K</div>
+          <div class="text-5xl font-bold text-white mb-8">₹15K</div>
           <ul class="space-y-4 mb-10">
             <li class="flex items-center gap-3"><span class="material-symbols-outlined text-white text-lg">check</span><span class="text-on-surface-variant text-sm">Up to 3 Structured Pages</span></li>
             <li class="flex items-center gap-3"><span class="material-symbols-outlined text-white text-lg">check</span><span class="text-on-surface-variant text-sm">Clean, Responsive Design</span></li>

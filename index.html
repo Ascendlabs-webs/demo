@@ -92,7 +92,7 @@
   <header class="fixed top-0 w-full z-50 bg-background/60 backdrop-blur-2xl border-b border-white/10 h-20">
     <div class="flex justify-between items-center px-margin-mobile md:px-gutter max-w-container-max mx-auto h-full">
       <a href="index.html" class="font-display-lg text-headline-md tracking-tighter text-on-surface">Ascend Labs</a>
-      <nav class="hidden md:flex gap-10">
+      <nav class="nav-desktop flex gap-10">
         <a href="index.html" class="nav-link font-label-caps text-sm text-white font-bold tracking-widest uppercase is-active">Home</a>
         <a href="services.html" class="nav-link font-label-caps text-sm text-on-surface-variant hover:text-white transition-colors tracking-widest uppercase">Services</a>
         <a href="work.html" class="nav-link font-label-caps text-sm text-on-surface-variant hover:text-white transition-colors tracking-widest uppercase">Work</a>
@@ -100,9 +100,21 @@
         <a href="pricing.html" class="nav-link font-label-caps text-sm text-on-surface-variant hover:text-white transition-colors tracking-widest uppercase">Pricing</a>
         <a href="contact.html" class="nav-link font-label-caps text-sm text-on-surface-variant hover:text-white transition-colors tracking-widest uppercase">Contact</a>
       </nav>
-      <a href="contact.html" class="bg-white text-black px-8 py-2.5 rounded-full font-label-caps uppercase text-[11px] tracking-[0.15em] hover:bg-neutral-200 active:scale-95 transition-all">Book a Free Call</a>
+      <a href="contact.html" class="hidden md:inline-block bg-white text-black px-8 py-2.5 rounded-full font-label-caps uppercase text-[11px] tracking-[0.15em] hover:bg-neutral-200 active:scale-95 transition-all">Book a Free Call</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html" class="is-active">Home</a>
+    <a href="services.html">Services</a>
+    <a href="work.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="mobile-cta">Book a Free Call</a>
+  </div>
 
   <main class="relative">
     <section class="pt-48 pb-32 px-margin-mobile md:px-gutter max-w-container-max mx-auto">
@@ -114,7 +126,7 @@
         <p class="font-body-lg text-on-surface-variant max-w-2xl leading-relaxed text-lg md:text-xl">
           We partner with ambitious brands to create digital experiences that don't just look exceptional—they perform exceptionally. From strategic design to scalable development.
         </p>
-        <div class="flex gap-4 mt-12">
+        <div class="hero-buttons flex gap-4 mt-12">
           <a href="contact.html" class="bg-white text-black px-10 py-4 rounded-full font-label-caps uppercase tracking-[0.15em] text-sm hover:bg-neutral-200 active:scale-95 transition-all">Book a Free Strategy Call</a>
           <a href="contact.html" class="border border-white/20 text-white px-10 py-4 rounded-full font-label-caps uppercase tracking-[0.15em] text-sm hover:bg-white/10 active:scale-95 transition-all">Get a Free Website Audit</a>
         </div>
@@ -184,7 +196,7 @@
         <h2 class="font-display-lg text-headline-md md:text-display-lg-mobile mb-6 text-on-surface">Why businesses choose Ascend Labs</h2>
         <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto leading-relaxed">We don't just build websites — we build digital platforms that drive real business outcomes.</p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="why-grid grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="bg-surface-container rounded-3xl p-10 border border-white/10 hover:border-white/30 transition-all group">
           <span class="material-symbols-outlined text-white text-4xl mb-6 group-hover:scale-110 transition-transform">psychology</span>
           <h3 class="font-display-lg text-xl text-on-surface mb-4">Strategy before design</h3>
@@ -282,13 +294,13 @@
       </div>
     </section>
 
-    <section class="py-32 px-margin-mobile md:px-gutter max-w-container-max mx-auto reveal-on-scroll">
+    <section class="cta-section py-32 px-margin-mobile md:px-gutter max-w-container-max mx-auto reveal-on-scroll">
       <div class="bg-surface-container-highest rounded-[48px] p-16 md:p-32 text-center relative overflow-hidden border border-white/10">
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,255,255,0.05)_0%,transparent_60%)]"></div>
         <div class="relative z-10">
           <h2 class="font-display-lg text-headline-md md:text-display-lg mb-8 text-on-surface tracking-tighter">Ready to Ascend?</h2>
           <p class="font-body-lg text-on-surface-variant max-w-2xl mx-auto mb-14 text-lg">Book a free strategy call and discover how we can transform your digital presence into a growth engine.</p>
-          <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+          <div class="cta-buttons flex flex-col md:flex-row gap-4 justify-center items-center">
             <a href="contact.html" class="bg-white text-black px-12 py-5 rounded-full font-label-caps uppercase tracking-[0.2em] text-sm hover:bg-neutral-200 hover:scale-105 active:scale-95 transition-all shadow-2xl shadow-white/10 inline-block">Book a Free Strategy Call</a>
             <a href="contact.html" class="border border-white/20 text-white px-12 py-5 rounded-full font-label-caps uppercase tracking-[0.2em] text-sm hover:bg-white/10 hover:scale-105 active:scale-95 transition-all inline-block">Get a Free Website Audit</a>
           </div>
