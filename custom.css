@@ -382,9 +382,6 @@ body { overflow-x: hidden; }
   /* ===== SERVICES PAGE ===== */
   .service-section { padding-top: 48px !important; padding-bottom: 48px !important; }
   .service-section .section-gap { gap: 28px !important; }
-  .service-hero { padding-top: 88px !important; padding-bottom: 32px !important; }
-  .service-hero h1 { font-size: 26px !important; word-break: break-word !important; hyphens: auto !important; }
-  .service-hero .mb-8 { margin-bottom: 16px !important; }
   .service-section h2 { font-size: 22px !important; }
   .service-section .mb-6 { margin-bottom: 12px !important; }
   .service-section .mb-10 { margin-bottom: 20px !important; }
@@ -394,8 +391,9 @@ body { overflow-x: hidden; }
   .service-section .space-y-4 li { margin-top: 12px !important; }
   .service-icon-grid { height: auto !important; min-height: 200px !important; }
   .service-icon-grid .min-h-\\[100px\\] { min-height: 70px !important; padding: 12px !important; }
-  .service-hero .aspect-\\[21\\/9\\] { aspect-ratio: 16/9 !important; }
-  .service-hero .mt-20 { margin-top: 28px !important; }
+  .hero-section .aspect-\\[21\\/9\\] { aspect-ratio: 16/9 !important; }
+  .hero-section .mt-20 { margin-top: 24px !important; }
+  .hero-section .-inset-10 { inset: -20px !important; }
 
   /* ===== ABOUT PAGE ===== */
   .about-cards { padding: 20px !important; }
@@ -432,6 +430,9 @@ body { overflow-x: hidden; }
   .portfolio-card { border-radius: 16px !important; }
   .portfolio-tags { gap: 4px !important; }
   .portfolio-tags span { font-size: 8px !important; padding: 2px 8px !important; }
+
+  /* ===== SERVICES GRID WRAPPER ===== */
+  .pb-section-gap { padding-bottom: 32px !important; }
 
   /* ===== GENERAL OVERFLOW ===== */
   h1, h2, h3 { word-break: break-word !important; hyphens: auto !important; }
