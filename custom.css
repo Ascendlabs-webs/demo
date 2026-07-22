@@ -391,7 +391,6 @@ body { overflow-x: hidden; }
   .service-section .space-y-4 li { margin-top: 12px !important; }
   .service-icon-grid { height: auto !important; min-height: 200px !important; }
   .service-icon-grid .min-h-\\[100px\\] { min-height: 70px !important; padding: 12px !important; }
-  .hero-section .aspect-\\[21\\/9\\] { aspect-ratio: 16/9 !important; }
   .hero-section .mt-20 { margin-top: 24px !important; }
 
   /* ===== ABOUT PAGE ===== */
