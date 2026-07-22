@@ -326,94 +326,114 @@ body { overflow-x: hidden; }
   .hamburger { display: flex; }
   .nav-desktop { display: none !important; }
 
-  /* Header */
-  .header-logo { font-size: 18px !important; }
+  /* ===== HEADER ===== */
+  header .px-margin-mobile { padding-left: 16px !important; padding-right: 16px !important; }
+  .header-logo { font-size: 15px !important; gap: 8px !important; }
+  .header-logo img { height: 20px !important; width: auto !important; }
 
-  /* Hero */
-  .hero-section { padding-top: 100px !important; padding-bottom: 48px !important; }
-  .hero-section h1 { font-size: 34px !important; }
-  .hero-section p { font-size: 15px !important; }
-  .hero-buttons { flex-direction: column !important; align-items: stretch !important; }
-  .hero-buttons a { text-align: center; padding-left: 24px !important; padding-right: 24px !important; }
+  /* ===== HERO ===== */
+  .hero-section { padding-top: 88px !important; padding-bottom: 32px !important; }
+  .hero-section h1 { font-size: 26px !important; word-break: break-word !important; hyphens: auto !important; }
+  .hero-section p { font-size: 14px !important; }
+  .hero-buttons { flex-direction: column !important; align-items: stretch !important; margin-top: 32px !important; }
+  .hero-buttons a { text-align: center; padding: 14px 20px !important; font-size: 11px !important; }
   .hero-section .max-w-4xl { width: 100% !important; }
+  .hero-section .mb-8 { margin-bottom: 20px !important; }
+  .hero-section .mt-12 { margin-top: 28px !important; }
 
-  /* Value props */
-  .value-card span { font-size: 28px !important; }
-  .value-card .font-label-caps { font-size: 11px !important; }
-  .value-card .text-xs { font-size: 10px !important; }
-  .value-props-container { padding: 24px !important; }
+  /* ===== VALUE PROPS ===== */
+  .value-props-container { padding: 20px !important; }
+  .value-props-container .gap-8 { gap: 16px !important; }
+  .value-card span { font-size: 24px !important; }
+  .value-card .font-label-caps { font-size: 10px !important; }
+  .value-card .text-xs { font-size: 9px !important; }
 
-  /* Branding visual grid */
-  .branding-visual { height: 280px !important; }
+  /* ===== BRANDING VISUAL ===== */
+  .branding-visual { height: 240px !important; gap: 12px !important; }
+  .branding-visual .p-8 { padding: 16px !important; }
+  .branding-visual .text-4xl { font-size: 24px !important; }
 
-  /* Why Choose */
+  /* ===== WHY CHOOSE ===== */
   .why-grid { grid-template-columns: 1fr !important; }
-  .why-card { padding: 24px !important; }
+  .why-card { padding: 20px !important; }
+  .why-card .text-4xl { font-size: 28px !important; margin-bottom: 16px !important; }
 
-  /* CTA */
-  .cta-section { padding: 40px 16px !important; }
-  .cta-section .cta-inner { padding: 40px 24px !important; border-radius: 32px !important; }
-  .cta-section h2 { font-size: 28px !important; }
+  /* ===== FEATURED WORK ===== */
+  .portfolio-info { padding: 16px 20px !important; }
+  .portfolio-info h3 { font-size: 16px !important; }
+
+  /* ===== CTA ===== */
+  .cta-section { padding: 32px 16px !important; }
+  .cta-section .cta-inner { padding: 32px 20px !important; border-radius: 24px !important; }
+  .cta-section h2 { font-size: 24px !important; }
+  .cta-section .mb-14 { margin-bottom: 24px !important; }
   .cta-buttons { flex-direction: column !important; align-items: stretch !important; }
-  .cta-buttons a { text-align: center; padding-left: 24px !important; padding-right: 24px !important; }
+  .cta-buttons a { text-align: center; padding: 14px 20px !important; font-size: 11px !important; white-space: normal !important; }
 
-  /* Footer */
-  footer { padding-top: 48px !important; padding-bottom: 48px !important; }
-  .footer-grid { grid-template-columns: 1fr 1fr !important; gap: 24px !important; }
+  /* ===== FOOTER ===== */
+  footer { padding-top: 40px !important; padding-bottom: 40px !important; }
+  .footer-grid { grid-template-columns: 1fr 1fr !important; gap: 20px !important; }
   .footer-grid > div:first-child { grid-column: span 2 !important; }
+  .footer-grid h4 { margin-bottom: 16px !important; }
+  .footer-grid .space-y-4 { margin-top: 0 !important; }
+  .footer-grid .space-y-4 li { margin-top: 10px !important; }
+  .footer-grid .mt-24 { margin-top: 32px !important; }
 
-  /* Services page */
-  .service-section { padding-top: 64px !important; padding-bottom: 64px !important; }
-  .service-section .section-gap { gap: 32px !important; }
-  .service-hero { padding-top: 100px !important; padding-bottom: 48px !important; }
-  .service-hero h1 { font-size: 34px !important; }
-
-  /* About page */
-  .about-cards { padding: 24px !important; }
-
-  /* Pricing page */
-  .pricing-card { padding: 32px 24px !important; }
-
-  /* Contact page */
-  .contact-form { padding: 0 !important; }
-
-  /* General section spacing */
-  .section-title { font-size: 28px !important; }
-  .section-desc { font-size: 15px !important; }
-
-  /* Service section icon grid on mobile */
-  .service-icon-grid { height: auto !important; min-height: 260px !important; }
-
-  /* Section spacing adjustments */
-  .section-gap { gap: 32px !important; }
-
-  /* Reduce gap between service sections on mobile */
-  .space-y-40 > * + * { margin-top: 64px !important; }
-
-  /* Contact info cards */
-  .contact-info-card { padding: 16px !important; }
-
-  /* Service CTA button full width on mobile */
-  .cta-section .inline-block { width: 100% !important; text-align: center !important; }
-
-  /* About page right column cards spacing */
-  .about-cards + .about-cards { margin-top: 32px !important; }
-
-  /* Pricing FAQ cards padding */
-  .pricing-faq-card { padding: 24px !important; }
-
-  /* Ensure images don't overflow */
-  img { max-width: 100% !important; height: auto !important; }
-
-  /* Service section heading mobile */
-  .service-section h2 { font-size: 26px !important; }
-
-  /* Contact form full width button on mobile */
-  .contact-form button { width: 100% !important; }
-
-  /* Contact page columns gap on mobile */
-  .contact-grid { gap: 40px !important; }
-
-  /* Services hero image aspect on mobile */
+  /* ===== SERVICES PAGE ===== */
+  .service-section { padding-top: 48px !important; padding-bottom: 48px !important; }
+  .service-section .section-gap { gap: 28px !important; }
+  .service-hero { padding-top: 88px !important; padding-bottom: 32px !important; }
+  .service-hero h1 { font-size: 26px !important; word-break: break-word !important; hyphens: auto !important; }
+  .service-hero .mb-8 { margin-bottom: 16px !important; }
+  .service-section h2 { font-size: 22px !important; }
+  .service-section .mb-6 { margin-bottom: 12px !important; }
+  .service-section .mb-10 { margin-bottom: 20px !important; }
+  .service-section p { font-size: 14px !important; }
+  .service-section .grid-cols-2.gap-x-8 { gap: 12px !important; }
+  .service-section .space-y-4 { margin-top: 0 !important; }
+  .service-section .space-y-4 li { margin-top: 12px !important; }
+  .service-icon-grid { height: auto !important; min-height: 200px !important; }
+  .service-icon-grid .min-h-\\[100px\\] { min-height: 70px !important; padding: 12px !important; }
   .service-hero .aspect-\\[21\\/9\\] { aspect-ratio: 16/9 !important; }
+  .service-hero .mt-20 { margin-top: 28px !important; }
+
+  /* ===== ABOUT PAGE ===== */
+  .about-cards { padding: 20px !important; }
+  .about-cards + .about-cards { margin-top: 20px !important; }
+
+  /* ===== PRICING PAGE ===== */
+  .pricing-card { padding: 24px 20px !important; }
+  .pricing-card .text-5xl { font-size: 32px !important; }
+  .pricing-card .mb-8 { margin-bottom: 20px !important; }
+  .pricing-card .mb-10 { margin-bottom: 24px !important; }
+  .pricing-card .space-y-4 li { margin-top: 12px !important; }
+  .pricing-faq-card { padding: 20px !important; }
+  .pricing-faq-card h3 { font-size: 15px !important; }
+
+  /* ===== CONTACT PAGE ===== */
+  .contact-form { padding: 0 !important; }
+  .contact-form .space-y-6 > div { margin-top: 16px !important; }
+  .contact-form button { width: 100% !important; }
+  .contact-info-card { padding: 12px !important; gap: 14px !important; }
+  .contact-info-card .w-14 { width: 44px !important; height: 44px !important; }
+  .contact-grid { gap: 32px !important; }
+  .contact-grid .space-y-10 > div { margin-top: 20px !important; }
+
+  /* ===== SECTION SPACING ===== */
+  .space-y-40 > * + * { margin-top: 48px !important; }
+  img { max-width: 100% !important; height: auto !important; }
+  .section-title { font-size: 24px !important; }
+  .section-desc { font-size: 14px !important; }
+  .mb-20 { margin-bottom: 32px !important; }
+  .py-32 { padding-top: 48px !important; padding-bottom: 48px !important; }
+  .pb-32 { padding-bottom: 48px !important; }
+
+  /* ===== WORK PAGE ===== */
+  .portfolio-card { border-radius: 16px !important; }
+  .portfolio-tags { gap: 4px !important; }
+  .portfolio-tags span { font-size: 8px !important; padding: 2px 8px !important; }
+
+  /* ===== GENERAL OVERFLOW ===== */
+  h1, h2, h3 { word-break: break-word !important; hyphens: auto !important; }
+  .overflow-x-hidden { overflow-x: hidden !important; }
 }
