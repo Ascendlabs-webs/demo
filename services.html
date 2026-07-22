@@ -497,6 +497,19 @@ Grow your brand with consistent, high-quality content across every platform.
 </div>
 </footer>
 <script>
+        // Floating stars
+        const starsContainer = document.createElement('div');
+        starsContainer.className = 'stars-container';
+        document.body.appendChild(starsContainer);
+        for (let i = 0; i < 80; i++) {
+          const star = document.createElement('div');
+          star.className = 'star' + (i % 3 === 0 ? ' sm' : '') + (i % 7 === 0 ? ' lg' : '');
+          star.style.left = Math.random() * 100 + '%';
+          star.style.animationDuration = (10 + Math.random() * 20) + 's';
+          star.style.animationDelay = (Math.random() * 20) + 's';
+          starsContainer.appendChild(star);
+        }
+
         // Reveal on scroll logic
         const observerOptions = {
             threshold: 0.1,
@@ -522,6 +535,22 @@ Grow your brand with consistent, high-quality content across every platform.
         }, observerOptions);
 
         document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+
+        // Mobile menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (hamburger && mobileMenu) {
+          hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('open');
+            mobileMenu.classList.toggle('open');
+          });
+          mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+              hamburger.classList.remove('open');
+              mobileMenu.classList.remove('open');
+            });
+          });
+        }
 
         // Loading animation keyframe for AI section
         const style = document.createElement('style');
