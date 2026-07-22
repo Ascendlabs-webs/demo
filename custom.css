@@ -389,8 +389,9 @@ body { overflow-x: hidden; }
   .service-section .grid-cols-2.gap-x-8 { gap: 12px !important; }
   .service-section .space-y-4 { margin-top: 0 !important; }
   .service-section .space-y-4 li { margin-top: 12px !important; }
-  .service-icon-grid { height: auto !important; min-height: 200px !important; }
-  .service-icon-grid .min-h-\\[100px\\] { min-height: 70px !important; padding: 12px !important; }
+  .service-icon-grid { height: auto !important; }
+  .service-icon-grid .gap-3 { gap: 10px !important; }
+  .sm-card { min-height: 90px !important; display: flex !important; align-items: center !important; justify-content: center !important; }
   .hero-section .mt-20 { margin-top: 24px !important; }
 
   /* ===== ABOUT PAGE ===== */
